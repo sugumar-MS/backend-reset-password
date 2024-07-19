@@ -19,11 +19,11 @@ const SECRET_KEY = process.env.SECRET_KEY;
 const PORT = process.env.PORT || 3000;
 
 // Log the environment variables to ensure they are loaded correctly
-console.log("MongoDB URL:", URL);
-console.log("User Mail:", usermail);
-console.log("Mail Password:", mailpassword);
-console.log("Secret Key:", SECRET_KEY);
-console.log("Port:", PORT);
+// console.log("MongoDB URL:", URL);
+// console.log("User Mail:", usermail);
+// console.log("Mail Password:", mailpassword);
+// console.log("Secret Key:", SECRET_KEY);
+// console.log("Port:", PORT);
 
 if (!URL || !usermail || !mailpassword || !SECRET_KEY) {
     throw new Error("Missing required environment variables");
