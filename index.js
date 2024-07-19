@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const bcryptjs = require('bcryptjs');
 const mongodb = require('mongodb');
-const dotenv = require('dotenv').config();
+require('dotenv').config();
 const jwt = require('jsonwebtoken');
 const rn = require('random-number');
 const nodemailer = require("nodemailer");
@@ -17,6 +17,8 @@ const usermail = process.env.USER;
 const mailpassword = process.env.PASSWORD;
 const SECRET_KEY = process.env.SECRET_KEY;
 const PORT = process.env.PORT || 3000;
+
+
 
 // Log the environment variables to ensure they are loaded correctly
 // console.log("MongoDB URL:", URL);
@@ -36,7 +38,7 @@ const options = {
 };
 
 app.get("/", (req, res) => {
-    res.send("Welcome to the password reset flow API");
+    res.status(200).send("Welcome to the password reset flow API");
 });
 
 //1 Register
