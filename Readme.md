@@ -1,1 +1,1 @@
- **Backend reset Application setup**
+ **Backend-reset-password Application setup**
